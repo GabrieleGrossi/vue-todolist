@@ -59,10 +59,6 @@ createApp ({
             this.toDoList[index].done = !this.toDoList[index].done;
             ;
         },
-        /*addNewElement(toDo){
-           this.toDoList.push(toDo);
-           this.newElement = '';
-        },*/
         toAddTask() {
             if (this.newElement !== '') {
                 taskToAdd = {text: this.newElement, done: false};
