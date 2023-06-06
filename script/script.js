@@ -47,10 +47,24 @@ createApp ({
                     text:'Andare a letto presto',
                     done: false
                 }
-            ]
+            ],
+            newElement:'',
         }
     },
     methods:{
-
+        toDoDelete(index) {
+            this.toDoList.splice(index, 1);
+        },
+        /*addNewElement(toDo){
+           this.toDoList.push(toDo);
+           this.newElement = '';
+        },*/
+        toAddTask() {
+            if (this.newElement !== '') {
+                taskToAdd = {text: this.newElement, done: false};
+                this.toDoList.push(taskToAdd);
+                this.newElement = '';
+            }
+        }
     }
 }).mount('#app');

@@ -22,11 +22,14 @@
             <ul>
                 <li v-for="toDo in toDoList">
                     {{toDo.text}}
+                    <span><i class="fa-solid fa-trash-can" @click="toDoDelete(index)"></i></span>
                 </li>
             </ul>
             <div class="add-item">
-                <input type="text">
-                <button class="adder">Add new todo</button>
+                <input type="text" v-model="newElement">
+                <button class="adder" @click="toAddTask()">
+                    Add new todo
+                </button>
             </div>
         </main>
         <footer>
