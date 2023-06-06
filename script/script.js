@@ -30,6 +30,22 @@ createApp ({
                 {
                     text:'Fare benzina',
                     done: false
+                },
+                {
+                    text: 'Prendere Cami',
+                    done: true
+                },
+                {
+                    text:'Riportare Cami',
+                    done: false
+                },
+                {
+                    text:'Giocare a Diablo IV',
+                    done: true
+                },
+                {
+                    text:'Andare a letto presto',
+                    done: false
                 }
             ]
         }
