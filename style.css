@@ -16,3 +16,14 @@ header h1{
 ul li{
     list-style-type: none;
 }
+div.add-item{
+    margin-top: 2rem;
+}
+
+div.add-item button.adder{
+    margin-left: 0.7rem;
+    border-radius: 15px;
+    background-color: lightpink;
+    border: 1px solid lightpink;
+    padding: .8rem;
+}
