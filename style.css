@@ -7,20 +7,42 @@ body{
     width: 50%;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 header h1{
     text-align: left;
     margin-bottom: 2rem;
     color: red;
 }
+ul{
+    display: flex;
+    flex-direction: column;
+}
 ul li{
     list-style-type: none;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+}
+ul li:hover{
+    background-color: #fcf2ed;
 }
 div.add-item{
     margin-top: 2rem;
 }
 i{
     color: black;
+    margin-right: 0.5rem;
+}
+i.red:hover{
+    color: red;
+}
+i.green:hover{
+    color:#5ec841;
 }
 div.add-item button.adder{
     margin-left: 0.7rem;

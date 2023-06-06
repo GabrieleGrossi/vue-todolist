@@ -25,11 +25,11 @@ createApp ({
                 },
                 {
                     text:'Andare in farmacia',
-                    done: true
+                    done: false
                 },
                 {
                     text:'Fare benzina',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'Prendere Cami',
@@ -41,7 +41,7 @@ createApp ({
                 },
                 {
                     text:'Giocare a Diablo IV',
-                    done: true
+                    done: false
                 },
                 {
                     text:'Andare a letto presto',
@@ -54,6 +54,11 @@ createApp ({
     methods:{
         toDoDelete(index) {
             this.toDoList.splice(index, 1);
+        },
+        toggleClass(index) {
+            this.toDoList.forEach(index => {
+              index.done = !index.done;
+            });
         },
         /*addNewElement(toDo){
            this.toDoList.push(toDo);

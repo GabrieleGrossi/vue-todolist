@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome 6.4.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <title>Vue ToDoList</title>
 </head>
 <body>
@@ -22,11 +26,14 @@
             <ul>
                 <li v-for="(toDo, index) in toDoList" :class="{'task-done' : toDo.done }">
                     {{toDo.text}}
-                    <span><i class="fa-solid fa-trash-can" @click="toDoDelete(index)"></i></span>
+                    <span>
+                        <i class="fa-solid fa-xmark red" @click="toDoDelete(index)"></i>
+                        <i class="fa-solid fa-check green" @click="toggleClass(index)"></i>
+                    </span>
                 </li>
             </ul>
             <div class="add-item">
-                <input type="text" v-model="newElement">
+                <input type="text" v-model="newElement" @keydown.enter="toAddTask()">
                 <button class="adder" @click="toAddTask()">
                     Add new todo
                 </button>
