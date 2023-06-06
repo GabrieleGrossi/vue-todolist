@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+header h1{
+    text-align: left;
+    margin-bottom: 2rem;
+    color: red;
+}
 ul li{
     list-style-type: none;
 }

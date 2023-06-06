@@ -15,19 +15,19 @@ createApp ({
     data(){
         return{
             toDoList: [
-                activityOne={
+                {
                     text: 'Fare la spesa',
                     done: true
                 },
-                activityTwo={
+                {
                     text:'Portare fuori il cane',
                     done: false
                 },
-                activityThree={
+                {
                     text:'Andare in farmacia',
                     done: true
                 },
-                activityFour={
+                {
                     text:'Fare benzina',
                     done: false
                 }
