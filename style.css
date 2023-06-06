@@ -19,11 +19,17 @@ ul li{
 div.add-item{
     margin-top: 2rem;
 }
-
+i{
+    color: black;
+}
 div.add-item button.adder{
     margin-left: 0.7rem;
     border-radius: 15px;
     background-color: lightpink;
     border: 1px solid lightpink;
     padding: .8rem;
+}
+.task-done{
+    text-decoration: line-through;
+    color: red;
 }

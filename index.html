@@ -20,7 +20,7 @@
         </header>
         <main>
             <ul>
-                <li v-for="toDo in toDoList">
+                <li v-for="toDo in toDoList" :class="{'task-done' : toDo.done }">
                     {{toDo.text}}
                     <span><i class="fa-solid fa-trash-can" @click="toDoDelete(index)"></i></span>
                 </li>
