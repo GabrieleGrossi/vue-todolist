@@ -56,9 +56,8 @@ createApp ({
             this.toDoList.splice(index, 1);
         },
         toggleClass(index) {
-            this.toDoList.forEach(index => {
-              index.done = !index.done;
-            });
+            this.toDoList[index].done = !this.toDoList[index].done;
+            ;
         },
         /*addNewElement(toDo){
            this.toDoList.push(toDo);
