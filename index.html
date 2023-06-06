@@ -33,9 +33,12 @@
                 </li>
             </ul>
             <div class="add-item">
-                <input type="text" v-model="newElement" @keydown.enter="toAddTask()">
+                <input type="text" class="input" placeholder="
+                Insert a new task to do" v-model="newElement" @keydown.enter="toAddTask()">
                 <button class="adder" @click="toAddTask()">
-                    Add new todo
+                    <h3>
+                        Add new todo
+                    </h3>
                 </button>
             </div>
         </main>
