@@ -23,7 +23,10 @@
             </h1>
         </header>
         <main>
-            <ul>
+            <h2 v-if="toDoList.length === 0">
+                There are no more todo elements
+            </h2>
+            <ul v-else>
                 <li v-for="(toDo, index) in toDoList" :class="{'task-done' : toDo.done }">
                     {{toDo.text}}
                     <span>
